@@ -17,8 +17,8 @@ bool play_game(const int difficulty)
 
 	const int code_sum = code_a + code_b + code_c;
 	const int code_product = code_a * code_b * code_c;
-
-	// Print CodeSum and CodeProduct to the terminal
+	 
+	// Print code_sum and CodeProduct to the terminal
 	std::cout << "+ There are 3 numbers in the code";
 	std::cout << "\n+ The codes add-up to: " << code_sum;
 	std::cout << "\n+ The codes multiply to give: " << code_product << std::endl;
@@ -28,7 +28,7 @@ bool play_game(const int difficulty)
 	auto guess_sum = guess_a + guess_b + guess_c;
 	auto guess_product = guess_a * guess_b * guess_c;
 	// Check if the players guess is correct
-	if (guess_sum == code_sum && guess_product == code_product)
+	if (guess_sum == code_sum && guess_product == code_product) 
 	{
 		std::cout << "\n*** Well done agent! You have extracted a file! Keep going! ***";
 		return true;
